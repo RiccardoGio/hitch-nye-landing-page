@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
 
+/* variables */
+:root {
+    --dark: #191919;
+
+}
+
 html, body, img {
     margin: 0;
     padding: 0;
@@ -9,10 +15,15 @@ html, body, img {
 }
 
 body {
-    background-color: #191919;
+    background-color: var(--dark);
     font-family: 'Space Grotesk', sans-serif;
     color: white;
 }
+
+div {
+    box-sizing: border-box;
+}
+
 .page-wrapper {
     width: 100vw;
     height: 100vh;
@@ -27,6 +38,10 @@ h2 {
     font-size: 3rem;
     font-weight: 400;
 }
+h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
 
 p {
     font-size: 1.4rem;
@@ -36,7 +51,6 @@ p {
     navbar
 */
 .navbar {
-    box-sizing: border-box;
     position: fixed;
     top: 0;
     width: 100vw;
@@ -57,6 +71,7 @@ p {
 */
 .full-screen {
     height: 90vh;
+    overflow-y: hidden;
   }
 
 .full-width {
@@ -93,6 +108,13 @@ strong:hover, a:hover {
 }
 
 /*------------------------------------------------------------------
+    iframe
+*/
+.spline {
+    height: calc(100% + 80px);
+}
+
+/*------------------------------------------------------------------
     Slider
 */
 .slider {
@@ -113,4 +135,80 @@ strong:hover, a:hover {
 */
 .blocks-container {
     display: flex;
+    flex-wrap: wrap;
 }
+.block {
+    min-width: 350px;
+    width: 30%;
+    margin-right: 1rem;
+    flex-grow: 1;
+}
+.block img {
+    width: 100%;
+}
+
+/*------------------------------------------------------------------
+    Button
+*/
+
+a.button {
+    padding : 1rem 2rem;
+    background-image: linear-gradient(to right, #ff5daa, #8cf0ad);
+    color: var(--dark);
+    text-decoration: none;
+    display: inline-block;
+}
+
+/*------------------------------------------------------------------
+    Overlay & Sidebar
+*/
+.overlay {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.overlay-background {
+    flex-grow: 1;
+    background-color: var(--dark);
+    opacity: 0.8;
+}
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 40vw;
+    background-color: rebeccapurple;
+    padding: 3vw;
+    overflow-y: scroll;
+}
+
+.close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    cursor: pointer;
+}
+.close-button svg {
+    width: 40px;
+    height: 40px;
+}
+
+/* Closed */
+.overlay.closed {
+    transform: translateX(100%);
+}
+.overlay.closed .sidebar {
+    transform: translateX(100%);
+}
+
+/*------------------------------------------------------------------
+    Mobile
+------------------------------------------------------------------*/
+
