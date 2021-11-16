@@ -2,6 +2,7 @@ let previousPosition
 
 function open(overlay, event) {
     event.preventDefault();
+    setTimeout(function() { window.scrollTo(0, 1) }, 100);
     overlay.classList.add('open');
 }
 
@@ -12,7 +13,7 @@ function close(overlay) {
 
 // Define event handler
 const onPageLoad = (e) => {
-    setTimeout(function() { window.scrollTo(0, 1) }, 100);
+
 
     const overlay = document.getElementById('overlay');
     const closeOverlay = document.querySelectorAll('.close-overlay');
