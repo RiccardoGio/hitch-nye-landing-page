@@ -120,6 +120,11 @@ strong:hover, a:hover {
     height: calc(100% + 80px);
     pointer-events: none;
 }
+.iframe-section .desktop{
+    background-image: url('../assets/bg-mobile.jpg');
+    background-size: cover;
+    background-position: center;
+}
 
 /*------------------------------------------------------------------
     Slider
@@ -277,5 +282,8 @@ a.button {
     }
     .navbar a {
         padding: 16px 0;
+    }
+    .iframe-section .desktop  iframe {
+        display: none;
     }
 }
