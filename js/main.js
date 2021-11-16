@@ -1,10 +1,20 @@
 function open(overlay) {
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${window.scrollY}px`;
+
+
     overlay.classList.add('open');
+
 }
 
 function close(overlay) {
+    const scrollY = document.body.style.top;
+    document.body.style.position = '';
+    document.body.style.top = '';
+    window.scrollTo(0, parseInt(scrollY || '0') * -1);
+    console.log(scrollY);
+
     overlay.classList.remove('open');
-    console.log(overlay);
 }
 
 
