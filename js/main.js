@@ -1,9 +1,9 @@
 function open(overlay) {
-    overlay.classList.remove('closed');
+    overlay.classList.add('open');
 }
 
 function close(overlay) {
-    overlay.classList.add('closed');
+    overlay.classList.remove('open');
     console.log(overlay);
 }
 
