@@ -6,12 +6,18 @@
 
 }
 
-html, body, img {
+html, body {
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-os-font-smoothing: grayscale;
     font-size: 1em;
+    height: 100%;
+}
+
+img {
+    margin: 0;
+    padding: 0;
 }
 
 body {
