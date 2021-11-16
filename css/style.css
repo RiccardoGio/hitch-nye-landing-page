@@ -118,6 +118,7 @@ strong:hover, a:hover {
 */
 .spline {
     height: calc(100% + 80px);
+    pointer-events: none;
 }
 
 /*------------------------------------------------------------------
