@@ -251,11 +251,11 @@ a.button {
       .images-container img {
           max-height: 400px;
       }
-      .sidebar {
+      .overlay .sidebar {
           width: 100vw;
           padding: 6vw;
       }
-     .overlay-background {
+     .overlay .overlay-background {
          display: none;
      }
 
