@@ -2,7 +2,6 @@ let previousPosition
 
 function open(overlay, event) {
     event.preventDefault();
-    setTimeout(function() { window.scrollTo(0, 1) }, 100);
     overlay.classList.add('open');
 }
 
