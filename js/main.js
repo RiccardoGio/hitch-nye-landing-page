@@ -12,8 +12,7 @@ function close(overlay) {
 
 // Define event handler
 const onPageLoad = (e) => {
-
-    // setTimeout(function() { window.scrollTo(0, 1) }, 100);
+    setTimeout(function() { window.scrollTo(0, 1) }, 100);
 
     const overlay = document.getElementById('overlay');
     const closeOverlay = document.querySelectorAll('.close-overlay');
