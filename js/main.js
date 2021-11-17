@@ -3,10 +3,12 @@ let previousPosition
 function open(overlay, event) {
     event.preventDefault();
     overlay.classList.add('open');
+    document.body.classList.add('overflow-hidden');
 }
 
 function close(overlay) {
     overlay.classList.remove('open');
+    document.body.classList.remove('overflow-hidden');
 }
 
 

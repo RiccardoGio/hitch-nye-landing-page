@@ -30,12 +30,9 @@ div {
     box-sizing: border-box;
 }
 
-/* .page-wrapper {
-    width: 100vw;
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-} */
+.page-wrapper {
+    padding-bottom: 4rem;
+}
 
 /*------------------------------------------------------------------
     Typography
@@ -51,6 +48,10 @@ h3 {
 
 p {
     font-size: 1.4rem;
+}
+
+.text-center {
+    text-align: center;
 }
 
 /*------------------------------------------------------------------
