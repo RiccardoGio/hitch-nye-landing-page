@@ -244,7 +244,13 @@ a.button {
 /*------------------------------------------------------------------
     Mobile
 ------------------------------------------------------------------*/
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 960px) {
+    .logo img {
+        width: 4rem;
+    }
+    .navbar a {
+        padding: 16px 0;
+    }
     .navbar {
         padding: 0 2rem;
     }
@@ -278,13 +284,8 @@ a.button {
     .full-screen {
         height: 60vh;
       }
-    .logo img {
-        width: 4rem;
-    }
-    .navbar a {
-        padding: 16px 0;
-    }
-    .iframe-section .desktop  iframe {
-        display: none;
+
+    .iframe-section  iframe {
+        margin-right: -40px;
     }
 }
