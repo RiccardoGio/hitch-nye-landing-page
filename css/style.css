@@ -121,6 +121,7 @@ strong:hover, a:hover {
     height: calc(100% + 80px);
     pointer-events: none;
 }
+
 .iframe-section .desktop{
     background-image: url('../assets/bg-mobile.jpg');
     background-size: cover;
@@ -289,9 +290,8 @@ a.button {
         overflow-x: hidden;
     }
 
-    .iframe-section  .iframe-container {
+    .iframe-section  .spline {
         margin-right: -120px;
-        height: 100%;
     }
 
 }
