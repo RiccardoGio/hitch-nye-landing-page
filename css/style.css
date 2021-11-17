@@ -282,10 +282,16 @@ a.button {
 
 @media screen and (max-width: 375px) {
     .full-screen {
-        height: 60vh;
+        height: 52vh;
       }
 
-    .iframe-section  iframe {
-        margin-right: -40px;
+    .iframe-section {
+        overflow-x: hidden;
     }
+
+    .iframe-section  .iframe-container {
+        margin-right: -120px;
+        height: 100%;
+    }
+
 }
