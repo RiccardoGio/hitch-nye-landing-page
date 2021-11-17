@@ -283,7 +283,7 @@ a.button {
 
 @media screen and (max-width: 375px) {
     .full-screen {
-        height: 52vh;
+        height: 60vh;
       }
 
     .iframe-section {
