@@ -281,7 +281,7 @@ a.button {
 
   }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 490px) {
     .full-screen {
         height: 60vh;
       }
